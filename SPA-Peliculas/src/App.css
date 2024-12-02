@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  background-color: #eeeaf5;
+  color: #000000;
+}
+
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #302f2f;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.paginacion button {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paginacion button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.header {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px 0;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.busqueda-form {
+  display: flex;
+  justify-content: center; 
+  margin: 20px 0;
+}
+
+.busqueda-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detalle-container {
+  width: 100%; 
+  max-width: 750px; 
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detalle-title {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.detalle-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+.detalle-description {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: justify;
+}
+
+.detalle-release,
+.detalle-rating {
+  font-size: 1rem;
+  margin-bottom: 1px;
+  color: #555;
+}
+
+.detalle-trailer-link {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.detalle-trailer-link:hover {
+  text-decoration: underline;
+}
