@@ -1,5 +1,8 @@
-const API_KEY = '54111996c5b631d5307631b77bd61963';
-const BASE_URL = 'https://api.themoviedb.org/3';
+// const API_KEY = '54111996c5b631d5307631b77bd61963';
+// const BASE_URL = 'https://api.themoviedb.org/3';
+
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export async function obtenerPeliculasPopulares(page = 1) {
   const response = await fetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es-ES&page=${page}`);
